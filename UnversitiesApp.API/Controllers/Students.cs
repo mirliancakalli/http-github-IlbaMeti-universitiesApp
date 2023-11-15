@@ -21,6 +21,7 @@ namespace UniversitiesApp.API.Controllers
 
         [HttpGet("{id}")]
         public IActionResult GetStudentById(int id)
+
         {
             var studentFromDb = FakeDb.StudentsDb.FirstOrDefault(x => x.Id == id);
 
