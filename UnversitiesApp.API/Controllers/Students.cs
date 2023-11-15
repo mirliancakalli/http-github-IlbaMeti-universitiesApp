@@ -15,6 +15,7 @@ namespace UniversitiesApp.API.Controllers
         public IActionResult GetAllStudents()
         {
             var allStudentsFromDb = FakeDb.StudentsDb.ToList();
+
             return Ok(allStudentsFromDb);
         }
 
